@@ -12,29 +12,27 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "Name": {
+    "name": {
       "type": "string",
       "required": true,
       "unique": true
     },
-    "Description": {
-      "type": "richtext"
+    "description": {
+      "type": "richtext",
+      "required": true
     },
-    "Cover": {
+    "cover": {
       "type": "media",
       "multiple": false,
-      "required": false,
+      "required": true,
       "allowedTypes": [
-        "images",
-        "files",
-        "videos",
-        "audios"
+        "images"
       ]
     },
-    "Gallery": {
+    "gallery": {
       "type": "media",
       "multiple": true,
-      "required": false,
+      "required": true,
       "allowedTypes": [
         "images",
         "files",
@@ -42,19 +40,24 @@
         "audios"
       ]
     },
-    "Category": {
+    "category": {
       "type": "enumeration",
       "enum": [
         "site web",
         "jeu vidéo",
         "application web"
-      ]
+      ],
+      "required": true
     },
     "tags": {
       "type": "relation",
       "relation": "manyToMany",
       "target": "api::tag.tag",
-      "mappedBy": "projects"
+      "inversedBy": "projects"
+    },
+    "date": {
+      "type": "date",
+      "required": true
     }
   }
 }
