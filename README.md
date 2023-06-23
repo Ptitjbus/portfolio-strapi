@@ -42,6 +42,8 @@ git commit -m "Update"
 git push heroku main
 ```
 
+If you need to log in with a user name and password, the user name corresponds to the **heroku e-mail** address and the password corresponds to the **heroku account api key**.
+
 ---
 
 <sub>🤫 Psst! [Strapi is hiring](https://strapi.io/careers).</sub>
