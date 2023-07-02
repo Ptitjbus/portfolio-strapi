@@ -18,7 +18,7 @@
       "target": "api::project.project",
       "mappedBy": "category"
     },
-    "Name": {
+    "name": {
       "type": "string",
       "required": true
     }
