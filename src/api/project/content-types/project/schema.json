@@ -40,15 +40,6 @@
         "audios"
       ]
     },
-    "category": {
-      "type": "enumeration",
-      "enum": [
-        "site web",
-        "jeu vidéo",
-        "application web"
-      ],
-      "required": true
-    },
     "tags": {
       "type": "relation",
       "relation": "manyToMany",
@@ -58,6 +49,12 @@
     "date": {
       "type": "date",
       "required": true
+    },
+    "category": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::categorie.categorie",
+      "inversedBy": "projects"
     }
   }
 }
