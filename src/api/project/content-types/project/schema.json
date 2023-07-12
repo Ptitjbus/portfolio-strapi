@@ -55,6 +55,11 @@
       "relation": "manyToOne",
       "target": "api::categorie.categorie",
       "inversedBy": "projects"
+    },
+    "project_link": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::project-link.project-link"
     }
   }
 }

@@ -1,0 +1,22 @@
+{
+  "kind": "collectionType",
+  "collectionName": "project_links",
+  "info": {
+    "singularName": "project-link",
+    "pluralName": "project-links",
+    "displayName": "Links",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "link": {
+      "type": "string"
+    }
+  }
+}
